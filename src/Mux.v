@@ -4,10 +4,10 @@ module Mux(
     input  [31:0] B,
     output reg [31:0] out
 );
-    always @(*) begin
-        case (sel)
-            1'b0 : out <= A;
-            1'b1 : out <= B;
-        endcase
-    end
+always @(*) begin
+    case (sel)
+        1'b0 : out <= A;
+        1'b1 : out <= B;
+    endcase
+end
 endmodule

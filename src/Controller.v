@@ -10,7 +10,6 @@ module Controller(
     output reg       alu_op1_sel,
     output reg       alu_op2_sel,
     output reg       wb_sel,
-    // output reg [3:0] dm_r_en,
     output reg [3:0] dm_w_en,
     output     [4:0] opcode_,
     output     [2:0] func3_,

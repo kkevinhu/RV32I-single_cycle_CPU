@@ -57,8 +57,7 @@ module top_tb;
 
 
     // Initialize register[0] = 0 (hardwire to ground)
-    top.regfile.registers[0] = 32'd0;
-
+    top.reg_file.registers[0] = 32'd0;
 
     // Load Gloden Data
     num = 0;
@@ -73,7 +72,6 @@ module top_tb;
     // Wait until end of execution
     wait(top.dm.mem[16'hfffc] == 8'hff);
     $display("\nDone\n");
-
 
     // Compare result with Golden Data
     err = 0;

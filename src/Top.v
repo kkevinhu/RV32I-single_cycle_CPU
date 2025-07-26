@@ -53,7 +53,7 @@ Mux mux_pc(.sel(next_pc_sel), .A(jb_out), .B(pc_add_four), .out(next_pc));
 
 Reg_PC reg_pc(.clk(clk), .rst(rst), .next_pc(next_pc), .current_pc(current_pc));
 
-SRAM im (.clk(clk), .w_en(im_w_en), .address(current_pc[31:16]), .write_data(write_data), .read_data(inst));
+SRAM im (.clk(clk), .w_en(4'b0000), .address(current_pc[31:16]), .write_data(write_data), .read_data(inst));
 
 Decoder decoder(
     .inst(inst), .dc_out_opcode(opcode), .dc_out_func3(func3), .dc_out_func7(func7), 
@@ -62,7 +62,7 @@ Decoder decoder(
 
 Imme_Ext imme_ext(.inst(inst), .imme_ext_out(imme));
 
-Reg_File reg_file(
+RegFile reg_file(
     .clk(clk), .wb_en(wb_en), .wb_data(wb_data), .rd_index(rd_index), .rs1_index(rs1_index), .rs2_index(rs2_index), 
     .rs1_data_out(rs1_data), .rs2_data_out(rs2_data)
 );
