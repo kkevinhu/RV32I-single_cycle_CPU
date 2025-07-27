@@ -1,6 +1,6 @@
 module ALU (
-    input      [4:0]   opcode,  //inst[6:2]
-    input      [2:0]   func3,
+    input      [4:0]  opcode,   //inst[6:2]
+    input      [2:0]  func3,
     input             func7,
     input      [31:0] operand1,
     input      [31:0] operand2,
@@ -13,15 +13,15 @@ always @(*) begin
             case (func3)
                 3'b000 : begin
                     if (opcode == 5'b01100)
-                        alu_out <= (func7) ? (operand1 + operand2) : (operand1 - operand2);
+                        alu_out <= (func7) ? (operand1 - operand2) : (operand1 + operand2);
                     else
                         alu_out <= operand1 + operand2;
                 end
-                3'b001 : alu_out <= operand1 << operand2; 
-                3'b010 : alu_out <= operand1 < operand2;
-                3'b011 : alu_out <= operand1 < operand2;
+                3'b001 : alu_out <= operand1 << operand2[4:0]; 
+                3'b010 : alu_out <= $signed(operand1)   < $signed(operand2);
+                3'b011 : alu_out <= $unsigned(operand1) < $unsigned(operand2);
                 3'b100 : alu_out <= operand1 ^ operand2;
-                3'b101 : alu_out <= (func7) ? (operand1 >>> operand2) : (operand1 >> operand2);
+                3'b101 : alu_out <= (func7) ? $signed(($signed(operand1) >>> operand2[4:0])) : (operand1 >> operand2[4:0]);
                 3'b110 : alu_out <= operand1 | operand2;
                 3'b111 : alu_out <= operand1 & operand2;                
             endcase
@@ -36,9 +36,9 @@ always @(*) begin
             case (func3)
                 3'b000 : alu_out <= (operand1 == operand2); // beq
                 3'b001 : alu_out <= (operand1 != operand2); // bne
-                3'b100 : alu_out <= (operand1 < operand2);  // blt
+                3'b100 : alu_out <= ($signed(operand1)   < $signed(operand2));  // blt
                 3'b110 : alu_out <= ($unsigned(operand1) < $unsigned(operand2)); // bltu 
-                3'b101 : alu_out <= (operand1 >= operand2); // bge 
+                3'b101 : alu_out <= ($signed(operand1) >= $signed(operand2)); // bge 
                 3'b111 : alu_out <= ($unsigned(operand1) >= $unsigned(operand2)); // bgeu
             endcase
         end

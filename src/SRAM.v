@@ -15,8 +15,8 @@ always @(posedge clk) begin
             mem[address] <= write_data[7:0];
         end 
         4'b0011 : begin // store half word
-            mem[address    ] <= write_data[7:0];
-            mem[address + 1] <= write_data[15:8];
+            mem[address  ] <= write_data[7:0];
+            mem[address+1] <= write_data[15:8];
         end 
         4'b1111 : begin // store word
             mem[address  ] <= write_data[7:0];
@@ -24,8 +24,11 @@ always @(posedge clk) begin
             mem[address+2] <= write_data[23:16];
             mem[address+3] <= write_data[31:24];
         end
-        4'b0000 :       // load word
-            read_data <= {mem[address+3], mem[address+2], mem[address+1], mem[address]};
     endcase
+end
+
+always @(*) begin
+    if (w_en == 4'b0000)
+        read_data <= {mem[address+3], mem[address+2], mem[address+1], mem[address]};
 end
 endmodule

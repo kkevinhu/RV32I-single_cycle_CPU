@@ -10,49 +10,52 @@ VE1UN=LzD;8aZeF^gEbb5A3
 o-quiet -auto_acc_if_foreign -work work
 n@_opt
 OL;O;10.1c;51
-vAdder
-I<JYOW2DRMOa@];AXGiKY50
-VkB6mCF1O8MoX;hb^<K5Og0
 Z1 dC:\iverilog\myLibrary\COLAB\lab7
-Z2 w1753459116
+vAdder
+VkB6mCF1O8MoX;hb^<K5Og0
+r1
+31
+I<JYOW2DRMOa@];AXGiKY50
+R1
+Z2 w1753610973
 F./src/Adder.v
 Z3 8C:/iverilog/myLibrary/COLAB/lab7/src/Top.v
 Z4 FC:/iverilog/myLibrary/COLAB/lab7/src/Top.v
 L0 1
 Z5 OL;L;10.1c;51
-r1
-31
-Z6 !s108 1753516202.232000
+Z6 !s108 1753629682.177000
 Z7 !s107 ./src/SRAM.v|./src/RegFile.v|./src/Reg_PC.v|./src/Mux.v|./src/LD_Filter.v|./src/JB_Unit.v|./src/Imme_Ext.v|./src/Decoder.v|./src/Controller.v|./src/ALU.v|./src/Adder.v|C:/iverilog/myLibrary/COLAB/lab7/src/Top.v|
 Z8 !s90 -reportprogress|300|-work|work|-vopt|C:/iverilog/myLibrary/COLAB/lab7/src/Top.v|
 Z9 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
 n@adder
+!s85 0
 !i10b 1
 !s100 3@Jdg<W4b]7jIAkM?2l_a3
-!s85 0
 vALU
-IKa3hi_RjFId`DlL:Qe1]^0
 Vfen@>bGn4dm:DY?O@VYd]2
+r1
+31
+Ing3eVl0AY:h^Y3ITQ;`ih1
 R1
-R2
+w1753629674
 F./src/ALU.v
 R3
 R4
 L0 1
 R5
-r1
-31
 R6
 R7
 R8
 R9
 n@a@l@u
-!i10b 1
-!s100 hI9ClEShk9]4L[2^eV9]g3
 !s85 0
+!i10b 1
+!s100 PaEeQHh^A]XD^M@;b`JS60
 vController
-Iff_]Xl3DoLXTTOmJ02[Wn2
 VaMQH^Y6j[f^fM38=TJD]Y2
+r1
+31
+IABz:_<91?BYTVV7agGznR1
 R1
 R2
 F./src/Controller.v
@@ -60,39 +63,39 @@ R3
 R4
 L0 1
 R5
-r1
-31
 R6
 R7
 R8
 R9
 n@controller
-!i10b 1
-!s100 >amj<Q0dWJkKR@eC08_gZ2
 !s85 0
+!i10b 1
+!s100 25m>Bm:MKTQ;@Zh9;B3LA0
 vDecoder
-IJz<KVNHO<0UR9BHj2Tm[K3
 VTe7CV;?@Q`;0zciN7cb=C1
+r1
+31
+IJz<KVNHO<0UR9BHj2Tm[K3
 R1
-w1753459355
+R2
 F./src/Decoder.v
 R3
 R4
 L0 1
 R5
-r1
-31
 R6
 R7
 R8
 R9
 n@decoder
+!s85 0
 !i10b 1
 !s100 ]Y36S6Y3^TGJ1@Vf<_?[21
-!s85 0
 vImme_Ext
-IHC:=TA827`b9fz2bEoF0f2
 VmnUg9OofXTV:RN0Af<1J=2
+r1
+31
+IHC:=TA827`b9fz2bEoF0f2
 R1
 R2
 F./src/Imme_Ext.v
@@ -100,19 +103,19 @@ R3
 R4
 L0 1
 R5
-r1
-31
 R6
 R7
 R8
 R9
 n@imme_@ext
+!s85 0
 !i10b 1
 !s100 g<hNd@PNdRHUkG6iWCeJA1
-!s85 0
 vJB_Unit
-Il?`cZ_SE?_C=W?9;g6<<52
 VKfNkfE3Ze63Id8:PFEoL]2
+r1
+31
+Il?`cZ_SE?_C=W?9;g6<<52
 R1
 R2
 F./src/JB_Unit.v
@@ -120,19 +123,20 @@ R3
 R4
 L0 1
 R5
-r1
-31
 R6
 R7
 R8
 R9
 n@j@b_@unit
+!s85 0
 !i10b 1
 !s100 [f[dj^c?N2Y;RRKf5zV^12
-!s85 0
 vLD_Filter
-I1fV@4LZECeW4IhDQUBaaS3
 VST`S;K]lF0fAQbLCZm_IZ2
+r1
+!s85 0
+31
+I1fV@4LZECeW4IhDQUBaaS3
 R1
 R2
 F./src/LD_Filter.v
@@ -140,8 +144,6 @@ R3
 R4
 L0 1
 R5
-r1
-31
 R6
 R7
 R8
@@ -149,30 +151,31 @@ R9
 n@l@d_@filter
 !i10b 1
 !s100 :iXkHW<_MR@CU5Bm04AZ<0
-!s85 0
 vMux
-I>SnfKN9YhL1ZiFke7Momk2
 VbVKSQ:A_WG6GczXA1GoZ93
+r1
+31
+I>SnfKN9YhL1ZiFke7Momk2
 R1
-w1753461053
+R2
 F./src/Mux.v
 R3
 R4
 L0 1
 R5
-r1
-31
 R6
 R7
 R8
 R9
 n@mux
+!s85 0
 !i10b 1
 !s100 8KU4MedNLL>>4TOW1ZV462
-!s85 0
 vReg_PC
-IK[k;[okDBW6RNmHXb9CEQ1
-V1>12IodH^SCkQ9Vf]a:iV3
+VD_<Ng[9UHh]Lzl1LR5DVH3
+r1
+31
+IbG^1IIZj>[TZjl[J5NWGk2
 R1
 R2
 F./src/Reg_PC.v
@@ -180,19 +183,19 @@ R3
 R4
 L0 1
 R5
-r1
-31
 R6
 R7
 R8
 R9
 n@reg_@p@c
-!i10b 1
-!s100 ^QBdadC0PLzJEF3^GO<ge2
 !s85 0
+!i10b 1
+!s100 Hhd[W5TMXSSjNT;kC@izU1
 vRegFile
-IQJzQK^:W0i1;V[DRZKiU^0
 VeR@OJzc<oNNEBM2:X`CJA2
+r1
+31
+IQJzQK^:W0i1;V[DRZKiU^0
 R1
 R2
 F./src/RegFile.v
@@ -200,61 +203,59 @@ R3
 R4
 L0 1
 R5
-r1
-31
 R6
 R7
 R8
 R9
 n@reg@file
+!s85 0
 !i10b 1
 !s100 07lcUMNL2D^dU5NZ<V@8U0
-!s85 0
 vSRAM
-IW0VXz3[L6K`KA:Vhf`UQW2
 VDJZQCeMci=S[>fNQcGEI02
+r1
+31
+I8RCjU1e>g?GFOdjOzF8jZ0
 R1
-R2
+w1753623817
 F./src/SRAM.v
 R3
 R4
 L0 1
 R5
-r1
-31
 R6
 R7
 R8
 R9
 n@s@r@a@m
-!i10b 1
-!s100 SM`K9FPh`U?l<7M`kPFH20
 !s85 0
+!i10b 1
+!s100 UALB1^P=6b]6dJ:^=Qj901
 vTop
-IN<zfcEZV;1mAlAUKgBRf`1
 Vzlf?LeJoY1??OQJ5WWnZ01
+r1
+31
+I_V9Tz^K2;k_iN<L@6aL_:2
 R1
 R2
 R3
 R4
 L0 13
 R5
-r1
-31
 R6
 R7
 R8
 R9
 n@top
-!i10b 1
-!s100 >=AGB^2J<g?R6R7883Foj3
 !s85 0
+!i10b 1
+!s100 bO04LT4`^0dKdeDIX7Bb72
 vtop_tb
 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
-!s100 DO@ndU?Lbog_o_aF3R=IP0
-IVKf_lzQHOh?T1_zQlm0900
 VN7^ihbmI9enFg9D=Qco243
-!s105 top_tb_sv_unit
+r1
+31
+IVKf_lzQHOh?T1_zQlm0900
 S1
 R1
 w1753455180
@@ -262,11 +263,11 @@ w1753455180
 FC:/iverilog/myLibrary/COLAB/lab7/top_tb.sv
 L0 21
 R5
-r1
-31
-!s108 1753516200.971000
+o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s85 0
+!s100 DO@ndU?Lbog_o_aF3R=IP0
+!s105 top_tb_sv_unit
+!s108 1753629680.990000
 !s107 ./src/SRAM.v|./src/RegFile.v|./src/Reg_PC.v|./src/Mux.v|./src/LD_Filter.v|./src/JB_Unit.v|./src/Imme_Ext.v|./src/Decoder.v|./src/Controller.v|./src/ALU.v|./src/Adder.v|./src/Top.v|C:/iverilog/myLibrary/COLAB/lab7/top_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/iverilog/myLibrary/COLAB/lab7/top_tb.sv|
-o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
 !i10b 1
-!s85 0

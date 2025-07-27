@@ -5,13 +5,6 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	Mux
 
-} {} {}} C:/iverilog/myLibrary/COLAB/lab7/src/ALU.v {1 {vlog -work work -vopt C:/iverilog/myLibrary/COLAB/lab7/src/ALU.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module ALU
-
-Top level modules:
-	ALU
-
 } {} {}} C:/iverilog/myLibrary/COLAB/lab7/src/SRAM.v {1 {vlog -work work -vopt C:/iverilog/myLibrary/COLAB/lab7/src/SRAM.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module SRAM
@@ -52,19 +45,19 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	RegFile
 
-} {} {}} C:/iverilog/myLibrary/COLAB/lab7/src/Adder.v {1 {vlog -work work -vopt C:/iverilog/myLibrary/COLAB/lab7/src/Adder.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module Adder
-
-Top level modules:
-	Adder
-
 } {} {}} C:/iverilog/myLibrary/COLAB/lab7/src/Reg_PC.v {1 {vlog -work work -vopt C:/iverilog/myLibrary/COLAB/lab7/src/Reg_PC.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module Reg_PC
 
 Top level modules:
 	Reg_PC
+
+} {} {}} C:/iverilog/myLibrary/COLAB/lab7/src/Adder.v {1 {vlog -work work -vopt C:/iverilog/myLibrary/COLAB/lab7/src/Adder.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module Adder
+
+Top level modules:
+	Adder
 
 } {} {}} C:/iverilog/myLibrary/COLAB/lab7/src/Top.v {1 {vlog -work work -vopt C:/iverilog/myLibrary/COLAB/lab7/src/Top.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012

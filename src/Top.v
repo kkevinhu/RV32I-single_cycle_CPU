@@ -49,11 +49,11 @@ Controller controller(
 
 Adder adder(.A(current_pc), .C(pc_add_four));
 
-Mux mux_pc(.sel(next_pc_sel), .A(jb_out), .B(pc_add_four), .out(next_pc));
+// Mux mux_pc(.sel(next_pc_sel), .A(jb_out), .B(pc_add_four), .out(next_pc));
 
-Reg_PC reg_pc(.clk(clk), .rst(rst), .next_pc(next_pc), .current_pc(current_pc));
+Reg_PC reg_pc(.clk(clk), .rst(rst), .branch(next_pc_sel), .jb_pc(jb_out), .current_pc(current_pc));
 
-SRAM im (.clk(clk), .w_en(4'b0000), .address(current_pc[31:16]), .write_data(write_data), .read_data(inst));
+SRAM im (.clk(clk), .w_en(4'b0000), .address(current_pc[15:0]), .write_data(write_data), .read_data(inst));
 
 Decoder decoder(
     .inst(inst), .dc_out_opcode(opcode), .dc_out_func3(func3), .dc_out_func7(func7), 
@@ -77,7 +77,7 @@ Mux mux_jb_op1(.sel(jb_op1_sel), .A(rs1_data), .B(current_pc), .out(jb_op1));
 
 JB_Unit jb_unit(.operand1(jb_op1), .operand2(imme), .jb_out(jb_out));
 
-SRAM dm(.clk(clk), .w_en(dm_w_en), .address(alu_out[31:16]), .write_data(rs2_data), .read_data(ld_data));
+SRAM dm(.clk(clk), .w_en(dm_w_en), .address(alu_out[15:0]), .write_data(rs2_data), .read_data(ld_data));
 
 LD_Filter ld_filter(.func3(func3_), .ld_data(ld_data), .ld_data_f(ld_data_f));
 

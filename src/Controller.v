@@ -56,7 +56,7 @@ always @(*) begin
             next_pc_sel <= 0;
             im_w_en <= 0;
             wb_en <= 1;
-            jb_op1_sel <= 1;
+            jb_op1_sel <= 0;
             alu_op1_sel <= 1;
             alu_op2_sel <= 1'bx; 
             wb_sel <= 0;
@@ -110,7 +110,7 @@ always @(*) begin
             next_pc_sel <= 0;
             im_w_en <= 0;
             wb_en <= 1;
-            jb_op1_sel <= 1'bx;
+            jb_op1_sel <= 1'b1;
             alu_op1_sel <= 1;
             alu_op2_sel <= 1'bx; 
             wb_sel <= 0;
