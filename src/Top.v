@@ -19,7 +19,7 @@ wire func7;
 wire [2:0] func3;
 wire [4:0] opcode, rs1_index, rs2_index, rd_index;
 
-wire [31:0] next_pc, pc_add_four;
+wire [31:0] pc_add_four;
 wire [31:0] write_data, rs1_data, rs2_data, wb_data;
 wire [31:0] alu_out, alu_op1, alu_op2;
 wire [31:0] ld_data, ld_data_f;
@@ -48,8 +48,6 @@ Controller controller(
 );
 
 Adder adder(.A(current_pc), .C(pc_add_four));
-
-// Mux mux_pc(.sel(next_pc_sel), .A(jb_out), .B(pc_add_four), .out(next_pc));
 
 Reg_PC reg_pc(.clk(clk), .rst(rst), .branch(next_pc_sel), .jb_pc(jb_out), .current_pc(current_pc));
 

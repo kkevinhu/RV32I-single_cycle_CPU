@@ -1,4 +1,11 @@
-C:/iverilog/myLibrary/COLAB/lab7/src/Mux.v {1 {vlog -work work -vopt C:/iverilog/myLibrary/COLAB/lab7/src/Mux.v
+C:/iverilog/myLibrary/COLAB/lab7/src/ALU.v {1 {vlog -work work -vopt C:/iverilog/myLibrary/COLAB/lab7/src/ALU.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/iverilog/myLibrary/COLAB/lab7/src/Mux.v {1 {vlog -work work -vopt C:/iverilog/myLibrary/COLAB/lab7/src/Mux.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module Mux
 
@@ -18,25 +25,6 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 
 Top level modules:
 	Controller
-
-} {} {}} C:/iverilog/myLibrary/COLAB/lab7/top_tb.sv {1 {vlog -work work -vopt -sv C:/iverilog/myLibrary/COLAB/lab7/top_tb.sv
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module Adder
--- Compiling module ALU
--- Compiling module Controller
--- Compiling module Decoder
--- Compiling module Imme_Ext
--- Compiling module JB_Unit
--- Compiling module LD_Filter
--- Compiling module Mux
--- Compiling module Reg_PC
--- Compiling module RegFile
--- Compiling module SRAM
--- Compiling module Top
--- Compiling module top_tb
-
-Top level modules:
-	top_tb
 
 } {} {}} C:/iverilog/myLibrary/COLAB/lab7/src/RegFile.v {1 {vlog -work work -vopt C:/iverilog/myLibrary/COLAB/lab7/src/RegFile.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
