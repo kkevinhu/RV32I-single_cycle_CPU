@@ -19,7 +19,6 @@ wire func7;
 wire [2:0] func3;
 wire [4:0] opcode, rs1_index, rs2_index, rd_index;
 
-wire [31:0] pc_add_four;
 wire [31:0] write_data, rs1_data, rs2_data, wb_data;
 wire [31:0] alu_out, alu_op1, alu_op2;
 wire [31:0] ld_data, ld_data_f;
@@ -47,11 +46,9 @@ Controller controller(
     .opcode_(opcode_), .func3_(func3_), .func7_(func7_)
 );
 
-Adder adder(.A(current_pc), .C(pc_add_four));
-
 Reg_PC reg_pc(.clk(clk), .rst(rst), .branch(next_pc_sel), .jb_pc(jb_out), .current_pc(current_pc));
 
-SRAM im (.clk(clk), .w_en(4'b0000), .address(current_pc[15:0]), .write_data(write_data), .read_data(inst));
+SRAM im (.clk(clk), .w_en(4'b0000), .address(current_pc[15:0]), .write_data(), .read_data(inst));
 
 Decoder decoder(
     .inst(inst), .dc_out_opcode(opcode), .dc_out_func3(func3), .dc_out_func7(func7), 
